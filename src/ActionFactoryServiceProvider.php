@@ -30,7 +30,7 @@ class ActionFactoryServiceProvider implements ServiceProviderInterface
 
                 $factory = new ActionFactory($reflection, $namespace);
 
-                return $resolver->withFactory($factory);
+                return $resolver->withFactory([$factory, 'canHandle'], $factory);
 
             },
         ];
