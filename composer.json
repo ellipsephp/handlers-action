@@ -29,7 +29,7 @@
         "http-interop/http-middleware": "^0.5.0",
         "container-interop/service-provider": "^0.4.0",
         "ellipse/handlers": "^1.0",
-        "ellipse/container": "^1.0"
+        "ellipse/container-reflection": "^1.0"
     },
     "require-dev": {
         "peridot-php/peridot": "^1.19",
