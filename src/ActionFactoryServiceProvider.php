@@ -24,7 +24,7 @@ class ActionFactoryServiceProvider implements ServiceProviderInterface
         return [
             HandlerResolver::class => function ($container, HandlerResolver $resolver) {
 
-                $reflection = new ReflectionContainer($container);
+                $reflection = ReflectionContainer::decorate($container);
 
                 $namespace = $container->get('router.controllers.namespace');
 
