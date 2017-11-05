@@ -45,8 +45,11 @@
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         },
-        "binder": {
-            "provider": "Ellipse\\Handlers\\ActionFactoryServiceProvider"
-        }
+        "binder": [
+            {
+                "type": "class",
+                "value": "Ellipse\\Handlers\\ActionFactoryServiceProvider"
+            }
+        ]
     }
 }
