@@ -3,6 +3,7 @@
 namespace Ellipse\Handlers;
 
 use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Message\ResponseInterface;
 
 use Interop\Http\Server\RequestHandlerInterface;
 
@@ -53,7 +54,7 @@ class ActionHandler implements RequestHandlerInterface
      * @param \Psr\Http\Message\ServerRequestInterface  $request
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function handle(ServerRequestInterface $request)
+    public function handle(ServerRequestInterface $request): ResponseInterface
     {
         // get the container and the namespace of the controller class.
         $container = $this->container;
